@@ -31,6 +31,7 @@ def parse_template(contents):
         raise FileNotFoundError
     return (parsed_curlies, tuple(parsed_words))
 
-def merge():
-    pass
+def merge(template, words):
+    return template.format(*words)
+
 
